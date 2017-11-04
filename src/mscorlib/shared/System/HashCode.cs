@@ -311,7 +311,7 @@ namespace System
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private void Add(int value)
         {
-            // Note that x & 0x3 is like mod 3, but faster.
+            // Note that x & 0x3 is like mod 4, but faster.
 
             var val = (uint)value;
             uint position = _length & 0x3;
